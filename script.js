@@ -45,3 +45,17 @@ while (true) {
     break;
   }
 }
+
+let hours = 50;
+let wage = 10;
+
+if (hours <= 40) {
+  let paycheck = hours * wage;
+  console.log(`You will receive $${paycheck} this week.`);
+} else {
+  let overtimeHours = hours - 40;
+  let overtimeWage = overtimeHours * wage * 1.5;
+  let normalPay = 40 * wage;
+  let paycheck = overtimeWage + normalPay;
+  console.log(`You will receive $${paycheck} this week.`);
+}
